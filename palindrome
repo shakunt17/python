@@ -1,0 +1,32 @@
+def palindrome(s):
+ rev=s[::-1]
+ if s == rev:
+    return True
+ else:
+    return False
+def factorial(n):
+ if n <= 1:
+    return 1
+ else:
+    return n * factorial(n - 1)
+while True:
+ print("_____________Menu__________________")
+ print("1. Check if a string is palindrome")
+ print("2. Find the factorial of a number")
+ print("3. Exit")
+ choice = input("Enter your choice: ")
+ if choice == '1':
+    string1 = input("Enter a string: ")
+    if palindrome(string1)==True:
+        print("The string is a palindrome.\n")
+    else:
+        print("The string is not a palindrome.\n")
+ elif choice == '2':
+    num = int(input("Enter a number: "))
+    result = factorial(num)
+    print(f"The factorial of {num} is {result}\n")
+ elif choice == '3':
+     print("Exiting the program.\n")
+     break
+ else:
+    print("Invalid choice.\n")

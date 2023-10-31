@@ -1,0 +1,10 @@
+n1 = int(input("Enter the first number: "))
+n2 = int(input("Enter the second number: "))
+n1,n2=n2,n1
+print(f"Swapped values: n1 = {n1}, n2 = {n2}")
+if n1 > 0:
+ print("The number is positive")
+elif n1 == 0:
+ print("The number is zero")
+else:
+ print("The number is negative")

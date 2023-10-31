@@ -1,0 +1,28 @@
+import pandas as pd 
+from pandas import Series, DataFrame 
+# Pandas Series 
+data = [1, 2, 3, 4, 5, 6, 7, 8] 
+ser = pd.Series(data) 
+print("Pandas Series:\n", ser) 
+#Pandas DataFrame 
+d = {'Name': pd.Series(['Vivek', 'Ayush', 'Charlie', 'Shakunt']), 'Age': pd.Series([20,25,20,19])} 
+df = pd.DataFrame(d) 
+print("\n\nPandas DataFrame:\n", df)
+
+import pandas as pd
+# Creating a Data Series
+data_series = pd.Series([10, 20, 30, 40, 50])
+print("Data Series:")
+print(data_series)
+# Creating a Data Frame
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Emily'],
+    'Age': [25, 30, 35, 40, 45],
+    'City': ['New York', 'San Francisco', 'Los Angeles', 'Chicago', 'Houston']
+}
+data_frame = pd.DataFrame(data)
+print("\nData Frame:")
+print(data_frame)
+
+
+
