@@ -1,0 +1,23 @@
+pipeline{
+    agent any
+    
+    parameters{
+        string(name :'number1',defaultValue: '',description: 'first number')
+        string(name :'number2',defaultValue: '',description: 'second number')
+        string(name :'number3',defaultValue: '',description: 'third number')
+    }
+    stages{
+        stage('Add number'){
+            steps{
+                script{
+                    def num1 = number1.toInteger()
+                    def num2 = number2.toInteger()
+                    def num3 = number3.toInteger()
+                    
+                    def result = num1 + num2 + num3
+                    print('The sum is : $results')
+                }
+            }
+        }
+    }
+}
